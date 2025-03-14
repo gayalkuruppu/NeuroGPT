@@ -55,6 +55,8 @@ from trainer.base import Trainer
 from decoder.unembedder import make_unembedder
 
 os.environ["WANDB_DISABLED"] = "true"
+os.environ['NCCL_P2P_DISABLE'] = '1'
+os.environ['NCCL_IB_DISABLE'] = '1'
 
 def train(config: Dict=None) -> Trainer:
     """Model training according to config.
