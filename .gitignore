@@ -140,3 +140,4 @@ dmypy.json
 data/
 result/
 scripts/results/
+logs/
